@@ -1,0 +1,326 @@
+body {
+  background-color: whitesmoke;
+  width: 100%;
+  overflow-x: hidden;
+}
+.gornja {
+  background-image: url(images/bg.jpg);
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translateY(-116px);
+}
+
+/* whatsapp precica */
+.whatsapp {
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  font-size: 2rem;
+  z-index: 2000;
+  border-radius: 50%;
+}
+/* Navbar */
+
+.navbar {
+  z-index: 1000;
+}
+.nav-item {
+  font-size: 14px;
+  color: white;
+}
+.bi {
+  text-decoration: none;
+  color: white;
+}
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  opacity: 0;
+  background-color: white;
+  transition: opacity 0.3s ease-in-out;
+}
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+.naslov {
+  font-size: 90px;
+  font-weight: bold;
+  color: white;
+  padding-top: 200px;
+  letter-spacing: 4px;
+}
+
+.podnaslov {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.btn1 {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 10px 40px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  will-change: background-color, border-color;
+}
+
+.btn1:hover {
+  background-color: green !important;
+  border-color: transparent !important;
+}
+.btn2 {
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+.box1 {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  align-items: center;
+  line-break: auto;
+  line-height: 0.8;
+  transition: 0.3s ease;
+}
+.box2 {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  align-items: center;
+  line-break: auto;
+  line-height: 0.8;
+  transition: 0.3s ease;
+}
+.box3 {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  align-items: center;
+  line-break: auto;
+  line-height: 0.8;
+  transition: 0.3s ease;
+}
+.box1:hover,
+.box2:hover,
+.box3:hover {
+  background-color: white;
+  color: black;
+}
+.box1:hover i,
+.box2:hover i,
+.box3:hover i {
+  color: black;
+}
+
+/* sekcija 2 */
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.carousel-bottom-controls {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  z-index: 10;
+}
+
+.carousel-bottom-controls button.arrow {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.carousel-bottom-controls .index {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.carousel-bottom-controls .lines {
+  display: flex;
+  gap: 6px;
+}
+
+.carousel-bottom-controls .line {
+  width: 18px;
+  height: 2px;
+  background-color: #ccc;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.carousel-bottom-controls .line.active {
+  background-color: #001233;
+  opacity: 1;
+}
+.line1{
+  background-color: black;
+  width: 80px;
+  height: 2px;
+}
+.btn1-1 {
+  border: 1px solid black;
+  color: black;
+  background-color: transparent;
+  padding: 10px 40px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  will-change: background-color, border-color;
+}
+
+.btn1-1:hover {
+  background-color: black !important;
+  border-color: transparent !important;
+  color: white;
+}
+
+/* sekcija 2 */
+
+.sekcija3{
+  background-color: rgb(81, 81, 101);
+}
+
+/* MEDIA */
+
+@media (max-width: 1200px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9209;
+    left: 0;
+    right: 0;
+  }
+  body {
+    padding-top: 150px;
+  }
+  .btn2 {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-lg-transparent {
+    background-color: transparent !important;
+  }
+  .navbar .container {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  
+} 
+  @media (max-width: 992px) {
+    .naslov {
+      font-size: 65px;
+    }
+
+    .podnaslov {
+      font-size: 17px;
+    }
+    .box1,
+    .box2,
+    .box3 {
+      font-size: 25px;
+    }
+    .carousel-bottom-controls {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .box1 {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .box2 {
+      background-color: rgba(102, 0, 255, 0.6);
+    }
+    .box3 {
+      background-color: rgba(18, 235, 141, 0.6);
+    }
+    .carousel {
+    height: 80vh;
+  }
+  .carousel-inner img {
+    height: 80vh;
+  }
+  .kolona2{
+  max-width: 450px;
+}
+.carousel-two{
+  transform: translateY(-50px);
+  max-width: 500px;
+}
+  
+  }
+
+
+@media (max-width: 768px) {
+  .naslov {
+    font-size: 48px;
+    padding-top: 170px;
+  }
+
+  .podnaslov {
+    font-size: 15px;
+  }
+  .carousel {
+    max-height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  
+}
+
+@media (max-width: 576px) {
+  .naslov {
+    font-size: 36px;
+  }
+
+  .podnaslov {
+    font-size: 15px;
+  }
+}
